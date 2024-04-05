@@ -46,11 +46,11 @@
                 <div class="name">
                     <div class="label-input">
                         <label for="first_name">FIRST NAME*</label>
-                        <input type="text" id="first_name" name="first_name" placeholder="john" required>
+                        <input type="text" id="first_name" name="first_name" placeholder="john" pattern="^\b\D*\b" title="Must be in uppercase & lowercase format" required>
                     </div>
                     <div class="label-input">
                         <label for="last_name">LAST NAME*</label>
-                        <input type="text" id="last_name" name="last_name" placeholder="doe" required>
+                        <input type="text" id="last_name" name="last_name" placeholder="doe" pattern="^\b\D*\b" title="Must be in uppercase & lowercase format" required>
                     </div>
                 </div>
     
@@ -61,18 +61,22 @@
                     </div>
                     <div class="label-input">
                         <label for="phone_number">PHONE NUMBER*</label>
-                        <input type="number" id="phone_number" name="phone_number" placeholder="647XXXXX10" required>
+                        <input type="tel" id="phone_number" name="phone_number" placeholder="647XXXXX10" pattern="[1-9]{1}[0-9]{9}" title="Must be 10 digit phone number" required>
                     </div>
                 </div>
     
                 <div class="password-area">
                     <div class="label-input">
                         <label for="password">PASSWORD*</label>
-                        <input type="password" id="password" name="user_password" minlength="8" maxlength="16" title="must be 8-16 character long" required>
+                        <input type="password" id="password" name="user_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Minimum Requirements:
+                        - 8 characters long
+                        - Must contain a lowercase character
+                        - Must contain an uppercase character
+                        - Must contain a number" required>
                     </div>
                     <div class="label-input">
                         <label for="confirm_passowrd">CONFIRM PASSWORD*</label>
-                        <input type="password" id="confirm_passowrd" name="confirm_password" minlength="8" maxlength="16" required>
+                        <input type="password" id="confirm_passowrd" name="confirm_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                     </div>
                 </div>
             </div>
