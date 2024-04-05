@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    font-size: 1.35rem;
+}
+
+img {
+    width: 80px;
+    height: 105px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 40%;
+    background-image: url(images/halie-west.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.header-content {
+    margin-top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    font-family: "Skranji", system-ui;
+    font-size: 4rem;
+    color: white;
+    width: 100%;
+    background-color: rgba(10, 10, 10, 40%);
+}
+
+.background-credit {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+    font-size: medium;
+}
+
+.background-credit, .background-credit a {
+    color: rgb(166, 166, 166);
+}
+
+.container {
+    width: 65%;
+    background-color: rgb(250, 250, 250);
+}
+
+.content {
+    margin-top: 12%;
+    padding-left: 5%;
+    width: 80%;
+    font-weight: 650;
+}
+
+.extra-line {
+    margin: 25px 0;
+}
+
+.form-content {
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-bottom: 25px;
+    background-color: white;
+    border: 0px solid;
+    box-shadow: 2px 3px 5px #cbcbcb;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-content p {
+    font-weight: 650;
+}
+
+.submit-button {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    padding-left: 5%;
+}
+
+button {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    background-color: #596D48;
+    border: 0px;
+    border-radius: 6px;
+    padding: 12px 30px;
+}
+
+.name, .contact, .password-area {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: rgb(95, 95, 95);
+    display: flex;
+    gap: 10%;
+}
+
+input {
+    border: 1px solid;
+    border-color: #E5E7EB;
+    background-color: rgb(250, 250, 250);
+    border-radius: 4px;
+    height: 26px;
+    width: 120%;
+    padding: 8px;
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.log-in {
+    padding-left: 5%;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.log-in a{
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 700;
+}
+
+input:focus {
+    border-color: 1px solid #0000FF;
+    box-shadow: 1px 3px 5px #ccc;
+}
+
+button:hover {
+    opacity: 80%;
+}
+
+button:focus {
+    opacity: 100%;
+}
